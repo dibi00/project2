@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문구살래</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<style>
+    @font-face {
+    font-family: 'Ownglyph_meetme-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li><a href="">로그인</a></li>
+                <li><a href="">회원가입</a></li>
+                <li><a href="">주문조회</a></li>
+                <li><a href="">마이페이지</a></li>
+                <li><a href=""><img src="img/cart_icon.png" alt=""></a></li>
+                <li><div class="search-container">
+                    <input id="keyword" name="keyword" fw-filter fw-label="검색어" fw-msg class="iarchForm(this)" value type="text">
+                    <img src="img/search_icon.png" alt="">
+                </div></li>
+            </ul>
+        </div>
+        <div class="header">
+            <a href="index1.html"><img src="img/logo.png" alt=""></a>
+        </div>
+    </header>
+
+    <section id="home" class="banner">
+        <div class="header_nav">
+            <ul>
+                <li><a href=""><img src="img/menu_icon.png" alt=""></a></li>
+                <li><a href="">전체상품</a></li>
+                <li><a href="">베스트</a></li>
+                <li><a href="">세일</a></li>
+                <li><a href="">재입고</a></li>
+                <li><a href="">고객센터</a></li>
+                <li><a href="">상품문의</a></li>
+            </ul>
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="img/banner_back1.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/banner_back2.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/banner_back3.png" style="width:100%">
+            </div>
+        </div>
+    </section>
+
+    <div class="tag">
+        <ul>
+            <li class="tag_main">인기상품 태그</li>
+            <li><a href="">#필통</a></li>
+            <li><a href="">#노트</a></li>
+            <li><a href="">#형광펜</a></li>
+            <li><a href="">#메모지</a></li>
+            <li><a href="">#종이</a></li>
+            <li><a href="">#색연필</a></li>
+            <li><a href="">#물감</a></li>
+        </ul>
+    </div>
+
+    <div class="event fade-in">
+        <div class="event1">
+            <img src="img/event_img1.png" alt="">
+            <div class="event1_p">
+                <h3>3만원 이상 구매시</h3>
+                <h1>배송비 무료!</h1>
+            </div>
+        </div>
+        <div class="event2">
+            <img src="img/event_img2.png" alt="">
+            <div class="event2_p">
+                <h3>5월 출석, 포인트</h3>
+                <h1>출석체크!</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="category fade-in">
+        <img class="category_icon" src="img/category_icon.png" alt="">
+        <h2>상품 카테고리</h2>
+        <ul class="category_ul">
+            <li><a href=""><img src="img/category_img1.png" alt=""></a><h5>필기구</h5></li>
+            <li><a href=""><img src="img/category_img2.png" alt=""></a><h5>사무용품</h5></li>
+            <li><a href=""><img src="img/category_img3.png" alt=""></a><h5>파일/바인더</h5></li>
+            <li><a href=""><img src="img/category_img4.png" alt=""></a><h5>노트</h5></li>
+            <li><a href=""><img src="img/category_img5.png" alt=""></a><h5>잉크/복사</h5></li>
+            <li><a href=""><img src="img/category_img6.png" alt=""></a><h5>전자기기</h5></li>
+            <li><a href=""><img src="img/category_img7.png" alt=""></a><h5>사무기기</h5></li>
+            <li><a href=""><img src="img/category_img8.png" alt=""></a><h5>학용품/교재</h5></li>
+            <li><a href=""><img src="img/category_img9.png" alt=""></a><h5>화방용품</h5></li>
+            <li><a href=""><img src="img/category_img10.png" alt=""></a><h5>장난감</h5></li>
+        </ul>
+    </div>
+
+<div class="hr_line fade-in"><img src="img/hr_line.png" alt=""></div>
+
+    <section id="products" class="products fade-in">
+        <div class="container">
+            <img src="img/best_icon.png" alt="">
+            <br>
+            <h2>문구살래 Best item</h2>
+            <p>문구살래 고객님들께서
+                가장 많이 찾은 상품!</p>
+            <div class="product-list">
+                <div class="product" data-id="1">
+                    <div class="img_container">
+                        <a href="index3.html"><img class="image" src="img/item_img1.jpg" alt=""></a>
+                    </div>
+                    <h3>노란병아리 크레용 48색</h3>
+                    <p>9,900원</p>
+                    <h5>BEST</h5>
+                    <button>장바구니에 추가</button>
+                </div>
+
+                <div class="product" data-id="1">
+                    <div class="img_container">
+                        <a href="index3.html"><img class="image" src="img/item_img2.jpg" alt=""></a>
+                    </div>
+                    <h3>아모스 파스넷 36색</h3>
+                    <p>17,500원</p>
+                    <h5>BEST</h5>
+                    <button>장바구니에 추가</button>
+                </div>
+
+                <div class="product" data-id="1">
+                    <div class="img_container">
+                        <a href="index3.html"><img class="image" src="img/item_img3.jpg" alt=""></a>
+                    </div>
+                    <h3>넥스프로 색연필 틴케이스</h3>
+                    <p>17,500원</p>
+                    <h5>BEST</h5>
+                    <button>장바구니에 추가</button>
+                </div>
+
+                <div class="product" data-id="1">
+                    <div class="img_container">
+                        <a href="index3.html"><img class="image" src="img/item_img4.jpg" alt=""></a>
+                    </div>
+                    <h3>뽀로로 사인펜 12색</h3>
+                    <p>3,300원</p>
+                    <h5>BEST</h5>
+                    <button>장바구니에 추가</button>
+                </div>
+            </div>
+            <div class="product-list">
+                <div class="product" data-id="1">
+                    <div class="img_container">
+                        <a href="index3.html"><img class="image" src="img/item_img9.jpg" alt=""></a>
+                    </div>
+                    <h3>짱구는 못말려 봉제 필통</h3>
+                    <p>11,500원</p>
+                    <h5>BEST</h5>
+                    <button>장바구니에 추가</button>
+                </div>
+
+                <div class="product" data-id="1">
+                    <div class="img_container">
+                        <a href="index3.html"><img class="image" src="img/item_img6.jpg" alt=""></a>
+                    </div>
+                    <h3>산리오 학용품 세트</h3>
+                    <p>19,500원</p>
+                    <h5>BEST</h5>
+                    <button>장바구니에 추가</button>
+                </div>
+
+                <div class="product" data-id="1">
+                    <div class="img_container">
+                        <a href="index3.html"><img class="image" src="img/item_img7.jpg" alt=""></a>
+                    </div>
+                    <h3>카카오프렌즈 4본 연필세트</h3>
+                    <p>2,300원</p>
+                    <h5>BEST</h5>
+                    <button>장바구니에 추가</button>
+                </div>
+
+                <div class="product" data-id="1">
+                    <div class="img_container">
+                        <a href="index3.html"><img class="image" src="img/item_img8.jpg" alt=""></a>
+                    </div>
+                    <h3>플루이드 파스텔 볼펜 세트</h3>
+                    <p>1,600원</p>
+                    <h5>BEST</h5>
+                    <button>장바구니에 추가</button>
+                </div>
+            </div>
+
+            <a href="index2.html"><h3>더보기 →</h3></a>
+        </div>
+        
+    </section>
+
+    <div class="hr_line fade-in"><img src="img/hr_line.png" alt=""></div>
+
+
+    <div id="menu2-section" class="menu2_h1 fade-in">
+        <img class="review_icon"  src="img/review_icon.png" alt="">
+        <h1>상품후기</h1>
+        <p>고객님들이 남겨주신 소중한 리뷰입니다</p>
+    </div> 
+    <div class="menu2 fade-in">
+        <button class="arrow left-arrow">&#10094;</button>
+        <div class="review-container">
+            <div class="review">
+                <div class="boxreview">
+                    <img src="img/review_img4.png" alt="">
+                    <h4>너무 좋아요 잘쓰겠습니다!</h4>
+                    <div class="boxreview_p">
+                        <h5>김**</h5> <p>2024-05-10</p>
+                    </div>
+                </div>
+    
+                <div class="boxreview">
+                    <img src="img/review_img5.png" alt="">
+                    <h4>귀엽고 예뻐요~ 만족스러워요~</h4>
+                    <div class="boxreview_p">
+                        <h5>이**</h5> <p>2024-05-10</p>
+                    </div>
+                </div>
+    
+                <div class="boxreview">
+                    <img src="img/review_img6.png" alt="">
+                    <h4>아이가 좋아해요! 감사합니다!</h4>
+                    <div class="boxreview_p">
+                        <h5>박**</h5> <p>2024-05-10</p>
+                    </div>
+                </div>
+    
+                <div class="boxreview">
+                    <img src="img/review_img1.png" alt="">
+                    <h4>너무 좋아요 잘쓰겠습니다!</h4>
+                    <div class="boxreview_p">
+                        <h5>김**</h5> <p>2024-05-10</p>
+                    </div>
+                </div>
+    
+                <div class="boxreview">
+                    <img src="img/review_img2.png" alt="">
+                    <h4>귀엽고 예뻐요~ 만족스러워요~</h4>
+                    <div class="boxreview_p">
+                        <h5>이**</h5> <p>2024-05-10</p>
+                    </div>
+                </div>
+
+                <div class="boxreview">
+                    <img src="img/review_img3.png" alt="">
+                    <h4>아이가 좋아해요! 감사합니다!</h4>
+                    <div class="boxreview_p">
+                        <h5>박**</h5> <p>2024-05-10</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="arrow right-arrow">&#10095;</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const review = document.querySelector('.review');
+            const leftArrow = document.querySelector('.left-arrow');
+            const rightArrow = document.querySelector('.right-arrow');
+            let scrollAmount = 0;
+    
+            rightArrow.addEventListener('click', function () {
+                if (scrollAmount < (review.scrollWidth - review.clientWidth)) {
+                    scrollAmount += review.clientWidth;
+                    review.style.transform = `translateX(-${scrollAmount}px)`;
+                }
+            });
+    
+            leftArrow.addEventListener('click', function () {
+                if (scrollAmount > 0) {
+                    scrollAmount -= review.clientWidth;
+                    review.style.transform = `translateX(-${scrollAmount}px)`;
+                }
+            });
+        });
+    </script>
+    
+    
+
+    <div id="recent-views-bar">
+        <div class="before">
+            <h4>최근 본 상품</h4>
+        </div>
+        <ul id="recent-views-list">
+            <div class="list">
+                <li><a href="index3.html"><img src="img/item_img7.jpg" alt=""></a></li>
+                <li><p>카카오프렌즈 4본 연필세트</p></li>
+            </div>
+            <div class="list">
+                <li><a href="index3.html"><img src="img/item_img6.jpg" alt=""></a></li>
+                <li><p>산리오 학용품 문구세트</p></li>
+            </div>
+            <div class="list">
+                <li><a href="index3.html"><img src="img/item_img9.jpg" alt=""></a></li>
+                <li><p>짱구는 못말려 봉제 필통</p></li>
+            </div>
+        </ul>
+        <div class="top" id="scroll-to-top">
+            <h4>TOP</h4>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer fade-in">
+            <div class="footer_img">
+                <div class="footer_logo">
+                    <a href=""><img src="img/footer_logo.png" alt=""></a>
+                </div>
+                <div class="sns">
+                    <li><a href=""><img src="img/sns_01.png" alt=""></a></li>
+                    <li><a href=""><img src="img/sns_02.png" alt=""></a></li>
+                    <li><a href=""><img src="img/sns_03.png" alt=""></a></li>
+                    <li><a href=""><img src="img/sns_04.png" alt=""></a></li>
+                </div>
+            </div>
+
+
+            <div class="footer_info fade-in">
+                <div class="footer_info1">
+                    <h1>고객샌터</h1>
+                    <div class="info_h2">
+                        <h1>010-4612-0504</h1>
+                        <p>월~금 오전 10시~오후 6시</p>
+                        <p>토~일, 공휴일 휴무</p>
+                    </div>
+                </div>
+                <img src="img/line.png" alt="">
+                <div class="footer_info2">
+                    <h1>반품주소</h1>
+                    <div class="info_h2">
+                        <h2>부산 서구 충무대로 255번길 9</h2>
+                        <h2>충무쇼핑멘션 1층 문방구</h2>
+                    </div>
+                    <div class="info_h2">
+                        <p>반품 교환은 택배로 보내주세요</p>
+                    </div>
+                </div>
+                <img src="img/line.png" alt="">
+                <div class="footer_info3">
+                    <h1>은행계좌</h1>
+                    <div class="info_h2">
+                        <h2>농협은행 302-1218-9033-81</h2>
+                        <h2>예금주 : 정민우(문구살래)</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="copyright">
+            <p>Copyright © 문구살래 All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+            // 'TOP' 버튼 클릭 이벤트 추가
+            const topButton = document.getElementById('scroll-to-top');
+            topButton.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.querySelectorAll('.mySlides');
+        slides.forEach(slide => {
+            slide.style.display = 'none';
+        });
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = 'block';
+        setTimeout(showSlides, 2000); // Change image every 4 seconds
+    }
+});
+    </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appearOptions = {
+        threshold: 0.5,  // 요소가 50% 보일 때 트리거
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                return;
+            } else {
+                entry.target.classList.add('visible');
+                appearOnScroll.unobserve(entry.target);
+            }
+        });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
+});
+</script>
+</body>
+</html>

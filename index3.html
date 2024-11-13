@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문구살래</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<style>
+    @font-face {
+    font-family: 'Ownglyph_meetme-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    </style>
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li><a href="">로그인</a></li>
+                <li><a href="">회원가입</a></li>
+                <li><a href="">주문조회</a></li>
+                <li><a href="">마이페이지</a></li>
+                <li><a href=""><img src="img/cart_icon.png" alt=""></a></li>
+                <li><div class="search-container">
+                    <input id="keyword" name="keyword" fw-filter fw-label="검색어" fw-msg class="iarchForm(this)" value type="text">
+                    <img src="img/search_icon.png" alt="">
+                </div></li>
+            </ul>
+        </div>
+        <div class="header">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+    </header>
+
+    <section id="home" class="banner">
+        <div class="header_nav">
+            <ul>
+                <li><a href=""><img src="img/menu_icon.png" alt=""></a></li>
+                <li><a href="">전체상품</a></li>
+                <li><a href="">베스트</a></li>
+                <li><a href="">세일</a></li>
+                <li><a href="">재입고</a></li>
+                <li><a href="">고객센터</a></li>
+                <li><a href="">상품문의</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <div class="category_h2"><h2>상품 상세정보</h2></div>
+    <div class="category_hr"><img src="img/hr_line.png" alt=""></div>
+    <div class="info">
+        <div class="img_container">
+            <img class="image" src="img/item_img7.jpg" alt="">
+        </div>
+
+        <div class="info_p">
+            <h2>카카오프렌즈 4본 연필세트</h2>
+
+            <div class="info_hr">
+            <hr>
+            </div>
+
+        <div class="price">
+            <div class="price1">
+                <h3>판매가</h3>
+                <span><h3>2,300원</h3></span>
+            </div>
+            <div class="price2">
+                <h3>배송비</h3>
+                <span><h3>3,000원(3만원 이상 구매시 무료)</h3></span>
+            </div>
+        </div>
+
+        <div class="info_hr">
+            <hr>
+        </div>
+
+        <div class="select_color">
+            <h3>상품선택</h3>
+            <div class="color">
+                <a href=""><img src="img/color1.png" alt=""></a>
+                <a href=""><img src="img/color2.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="button">
+            <div class="button1">
+                <li><a href="">장바구니</a></li>
+            </div>
+            <div class="button2">
+                <li><a href="">구매</a></li>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <div class="hr_line fade-in"><img src="img/hr_line.png" alt=""></div>
+
+
+    <ul class="menu1 fade-in">
+        <li><a href="#menu1-section">상품상세</a></li>
+        <li><a href="#menu2-section">상품후기</a></li>
+        <li><a href="#menu3-section">Q&A</a></li>
+    </ul>
+    <div id="menu1-section fade-in" class="menu1_img">
+        <img src="img/big_img.png" alt="">
+    </div>
+
+
+
+    <div class="hr_line fade-in"><img src="img/hr_line.png" alt=""></div>
+
+
+
+    <div id="menu2-section" class="menu2_h1 fade-in">
+        <img class="review_icon"  src="img/review_icon.png" alt="">
+        <h1>상품후기</h1>
+        <p>고객님들이 남겨주신 소중한 리뷰입니다</p>
+    </div> 
+    <div class="menu2 fade-in">
+        <button class="arrow left-arrow">&#10094;</button>
+        <div class="review-container">
+            <div class="review">
+                <div class="boxreview">
+                    <img src="img/review_img1.png" alt="">
+                    <h4>너무 좋아요 잘쓰겠습니다!</h4>
+                    <div class="boxreview_p">
+                        <h5>김**</h5> <p>2024-05-10</p>
+                    </div>
+                </div>
+    
+                <div class="boxreview">
+                    <img src="img/review_img2.png" alt="">
+                    <h4>귀엽고 예뻐요~ 만족스러워요~</h4>
+                    <div class="boxreview_p">
+                        <h5>이**</h5> <p>2024-05-10</p>
+                    </div>
+                </div>
+
+                <div class="boxreview">
+                    <img src="img/review_img3.png" alt="">
+                    <h4>아이가 좋아해요! 감사합니다!</h4>
+                    <div class="boxreview_p">
+                        <h5>박**</h5> <p>2024-05-10</p>
+                    </div>
+                </div>
+
+                <div class="boxreview">
+                    <img src="img/review_img7.png" alt="">
+                    <h4>너무 좋아요 잘쓰겠습니다!</h4>
+                    <div class="boxreview_p">
+                        <h5>김**</h5> <p>2024-05-10</p>
+                    </div>
+                </div>
+    
+                <div class="boxreview">
+                    <img src="img/review_img8.png" alt="">
+                    <h4>귀엽고 예뻐요~ 만족스러워요~</h4>
+                    <div class="boxreview_p">
+                        <h5>이**</h5> <p>2024-05-10</p>
+                    </div>
+                </div>
+
+                <div class="boxreview">
+                    <img src="img/review_img9.png" alt="">
+                    <h4>아이가 좋아해요! 감사합니다!</h4>
+                    <div class="boxreview_p">
+                        <h5>박**</h5> <p>2024-05-10</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="arrow right-arrow">&#10095;</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const review = document.querySelector('.review');
+            const leftArrow = document.querySelector('.left-arrow');
+            const rightArrow = document.querySelector('.right-arrow');
+            let scrollAmount = 0;
+    
+            rightArrow.addEventListener('click', function () {
+                if (scrollAmount < (review.scrollWidth - review.clientWidth)) {
+                    scrollAmount += review.clientWidth;
+                    review.style.transform = `translateX(-${scrollAmount}px)`;
+                }
+            });
+    
+            leftArrow.addEventListener('click', function () {
+                if (scrollAmount > 0) {
+                    scrollAmount -= review.clientWidth;
+                    review.style.transform = `translateX(-${scrollAmount}px)`;
+                }
+            });
+        });
+    </script>
+
+
+<div class="hr_line fade-in"><img src="img/hr_line.png" alt=""></div>
+
+
+
+    <div id="menu3-section" class="menu3 fade-in">
+        <img class="q&a" src="img/q&a_icon.png" alt="">
+        <h1>Q&A</h1>
+        <p>고객님의 궁금증을 해결해 드립니다</p>
+        <div class="menu3_hr">
+            <hr>
+        </div>
+        <h3>게시물이 없습니다.</h3>
+        <a href="">문의하기</a>
+    </div>
+
+    <footer>
+        <div class="footer fade-in">
+            <div class="footer_img">
+                <div class="footer_logo">
+                    <a href=""><img src="img/footer_logo.png" alt=""></a>
+                </div>
+                <div class="sns">
+                    <li><a href=""><img src="img/sns_01.png" alt=""></a></li>
+                    <li><a href=""><img src="img/sns_02.png" alt=""></a></li>
+                    <li><a href=""><img src="img/sns_03.png" alt=""></a></li>
+                    <li><a href=""><img src="img/sns_04.png" alt=""></a></li>
+                </div>
+            </div>
+
+
+            <div class="footer_info fade-in">
+                <div class="footer_info1">
+                    <h1>고객센터</h1>
+                    <div class="info_h2">
+                        <h1>010-4612-0504</h1>
+                        <p>월~금 오전 10시~오후 6시</p>
+                        <p>토~일, 공휴일 휴무</p>
+                    </div>
+                </div>
+                <img src="img/line.png" alt="">
+                <div class="footer_info2">
+                    <h1>반품주소</h1>
+                    <div class="info_h2">
+                        <h2>부산 서구 충무대로 255번길 9</h2>
+                        <h2>충무쇼핑멘션 1층 문방구</h2>
+                    </div>
+                    <div class="info_h2">
+                        <p>반품 교환은 택배로 보내주세요</p>
+                    </div>
+                </div>
+                <img src="img/line.png" alt="">
+                <div class="footer_info3">
+                    <h1>은행계좌</h1>
+                    <div class="info_h2">
+                        <h2>농협은행 302-1218-9033-81</h2>
+                        <h2>예금주 : 정민우(문구살래)</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="copyright">
+            <p>Copyright © 문구살래 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="recent-views-bar">
+        <div class="before">
+            <h4>최근 본 상품</h4>
+        </div>
+        <ul id="recent-views-list">
+            <div class="list">
+                <li><a href="index3.html"><img src="img/item_img7.jpg" alt=""></a></li>
+                <li><p>카카오프렌즈 4본 연필세트</p></li>
+            </div>
+            <div class="list">
+                <li><a href="index3.html"><img src="img/item_img6.jpg" alt=""></a></li>
+                <li><p>산리오 학용품 문구세트</p></li>
+            </div>
+            <div class="list">
+                <li><a href="index3.html"><img src="img/item_img9.jpg" alt=""></a></li>
+                <li><p>짱구는 못말려 봉제 필통</p></li>
+            </div>
+        </ul>
+        <div class="top" id="scroll-to-top">
+            <h4>TOP</h4>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+                    // 'TOP' 버튼 클릭 이벤트 추가
+                    const topButton = document.getElementById('scroll-to-top');
+                    topButton.addEventListener('click', () => {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    });
+                });
+            </script>
+        
+            <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let slideIndex = 0;
+            showSlides();
+        
+            function showSlides() {
+                let slides = document.querySelectorAll('.mySlides');
+                slides.forEach(slide => {
+                    slide.style.display = 'none';
+                });
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = 'block';
+                setTimeout(showSlides, 2000); // Change image every 4 seconds
+            }
+        });
+            </script>
+        
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faders = document.querySelectorAll('.fade-in');
+        
+            const appearOptions = {
+                threshold: 0.5,  // 요소가 50% 보일 때 트리거
+                rootMargin: "0px 0px -50px 0px"
+            };
+        
+            const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        return;
+                    } else {
+                        entry.target.classList.add('visible');
+                        appearOnScroll.unobserve(entry.target);
+                    }
+                });
+            }, appearOptions);
+        
+            faders.forEach(fader => {
+                appearOnScroll.observe(fader);
+            });
+        });
+</script>
+
+
+</body>
+</html>
